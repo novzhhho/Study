@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JavaScript 是用来做什么的</h2>
+
+    <!-- 以下语句是用来实现对语句的更改 -->
+    <p id="demo">JavaScript能用来更改页面内容。</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 
+    '这是更改后的内容'">单击按钮更改内容 </button>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize = 
+    '35px'">单击按钮更改大小 </button>
+    <button type="button" onclick="document.getElementById('demo').style.display = 
+    'none'">单击按钮隐藏指定内容 </button>
+    <button type="button" onclick="document.getElementById('demo').style.display = 
+    'block'">单击按钮显示隐藏的内容 </button>
+
+    <!-- 以下语句是用来实现对页面中的图片进行更改的语句 -->
+    <p>在这种情况下,JavaScript 会更改图像的 src(来源)属性的值。</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">开灯</button>  
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">  
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">关灯</button>
+</body>
+</html>

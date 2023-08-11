@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 定义的文字同样可放置于body内 -->
+    <script>       
+        function myfirstfunction(){
+            document.getElementById("demo").innerHTML="在头文件中调用以修改为此段文字"
+        }
+    </script>
+</head>
+<!-- JavaScript 代码必须位于 <script> 与 </script> 标签之间。 -->
+<body>
+    <h2>正文中的 JavaScript</h2>
+    <p id="demo"></p>    
+    <script>
+    document.getElementById("demo").innerHTML = "我的第一个 JavaScript";
+    </script>
+    <button type="button" onclick="myfirstfunction()">点击此按钮以调用头部定义文字</button>  
+</body>
+</html>
